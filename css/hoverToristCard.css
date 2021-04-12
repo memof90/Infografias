@@ -19,7 +19,7 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     transform: perspective(900px);
     transform-style: preserve-3d;
@@ -31,7 +31,7 @@ body {
     height: 350px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: linear-gradient(rgb(225,150,58),rgb(227,144,91));
+    background: linear-gradient(#020c1c,#001d3d);
     transition:.6s;
     transform: rotatex(75deg) translatey(-200px) translatez(-100px);
     box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
@@ -74,8 +74,7 @@ body {
   margin-bottom: 10px;
   background: linear-gradient(rgb(93,94,170),rgb(93,66,103));
   animation: animate 1s linear infinite;
-  transition:.6s;
-  
+  transition:.6s; 
   transform: rotatex(75deg) translatey(-200px) translatez(-100px);
   box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
 }
@@ -109,16 +108,4 @@ body {
   transform: translateY(15px);
   width:200px;
   height:120px;
-}
-.footer{
-  position: absolute;
-  top: 500px;
-  margin: 10px;
-  width: 100%;
-   text-align: center;
-}
-.footer h2{
-  font-size:18px;
-  font-family: 'Exo', sans-serif;
-  
 }
